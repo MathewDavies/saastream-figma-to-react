@@ -1,0 +1,75 @@
+.menu{
+    position: relative;
+    height: 120px;
+    width: 100%;
+    
+}
+label {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    width: 50vw;
+    height: 50vw;
+    max-width: 150px;
+    max-height: 150px;
+    
+}
+
+.circle {
+    fill: transparent;
+    transition: fill 600ms;
+}
+
+.circle:focus {
+    fill: #979797;
+}
+
+@media (min-aspect-ratio: 1) {
+    label {
+        width: 50vh;
+        height: 50vh;
+   }
+}
+
+.hamburgerCheckbox{
+    display: none;
+}
+
+.line1, .line2, .line3, path {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    --length: 24;
+    --offset: -38;
+    stroke-dasharray: var(--length) var(--total-length);
+    stroke-dashoffset: var(--offset);
+    transition: all 0.8s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+
+.cross input:checked + svg .line1, .cross input:checked + svg .line3 {
+    --length: 22.627416998;
+}
+.cross input:checked + svg .line2 {
+    --length: 0;
+}
+.back input:checked + svg .line1, .back input:checked + svg .line3 {
+    --length: 8.602325267;
+}
+
+
+
+.line1, .line3 {
+    --total-length: 126.6418304443;
+}
+.line2 {
+    --total-length: 70;
+}
+.menu1 input:checked + svg .line1, .menu1 input:checked + svg .line3 {
+    --offset: -94.1149185097;
+}
+.menu1 input:checked + svg .line2 {
+    --offset: -50;
+}

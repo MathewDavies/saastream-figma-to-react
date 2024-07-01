@@ -1,9 +1,12 @@
 import './App.css';
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
-import Template from './Components/Template';
-import PageOne from './pages/PageOne';
-import PageTwo from './pages/PageTwo';
+import Template from './Layout/Template';
+import Home from './pages/Home';
+
+
+
 import PageThree from './pages/PageThree';
+
 
 function App() {
   return (
@@ -11,9 +14,10 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Template/>} > {/* wrap pages in the template */}
-          <Route index element={<PageOne/>} />
-          <Route path="pagetwo" element={<PageTwo/>}/>
-          <Route path="pagethree" element={<PageThree/>}/>
+          <Route index element={<Home/>} />
+          <Route path="PageThree" element={<PageThree/>}/>
+          
+          {/* <Route path="pagethree" element={<PageThree/>}/> */}
         </Route>
       </Routes>
     </BrowserRouter>

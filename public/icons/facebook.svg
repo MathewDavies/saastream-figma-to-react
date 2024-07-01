@@ -1,0 +1,7 @@
+<svg width="50" height="50" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Circle with stroke -->
+  <circle cx="50" cy="50" r="48" stroke="white" stroke-width="4" fill="none"/>
+
+  <!-- Larger Facebook "F" -->
+  <path d="M58,50H52V70H42V50H36V40H42V35C42,30,45,24,55,24H65V34H58C55,34,55,36,55,38V40H65L62,50Z" fill="white"/>
+</svg>
